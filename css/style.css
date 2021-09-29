@@ -114,8 +114,51 @@ Footer
 .single_copy p{
   text-align: center;
 }
+/* FORM */
+
+label {
+  display:block;
+  margin-top:50px;
+  letter-spacing:1px;
+}
 
 
+
+/* This section centers the form inside our web page*/
+form {
+  margin:auto auto;
+  width:auto;
+}
+
+/* Applying styles to our text boxes */
+input, textarea {
+width:400px;
+height:27px;
+background:#f3f2f2;
+border:2px solid rgba(255, 0, 242,1);
+padding:10px;
+margin-top:10px;
+font-size:0.7em;
+color:black;
+}
+
+textarea {
+height:200px;
+font-family:Arial;
+}
+
+#submit {
+  display: block; background: rgba(132, 0, 255,0.8);
+   color:white;padding: 10px 30px; border-radius:50px; 
+   text-decoration:none;
+   text-align: center;
+  width:125px;
+  height:50px;
+  margin-top:20px;
+ 
+ 
+  cursor:pointer; 
+}
 
 
 
