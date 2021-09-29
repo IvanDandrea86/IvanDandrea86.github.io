@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>D'Andrea Ivan</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  </head>
+  <body>
+    <header class="header clearfix">
+      <a href="index.html" class="header_logo"><img src="./img/Logo2.png" alt=""></a>
+      <a href="" class="header_icon-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <ul class="header_menu animate">
+        <li class="header_menu_item"><a href="index.html">Home</a></li>
+        <li class="header_menu_item"><a href="bio.html">About Me</a></li> 
+        <li class="header_menu_item"><a href="works.html">My Works</a></li>        
+        <li class="header_menu_item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+  <section class="cover cover--single">
+    <div class="cover_filter"></div>
+    <div class="cover_caption">
+      <div class="cover_caption_copy">
+        <h1>Ivan D'Andrea Junior Web Developer</h1>
+      </div>
+    </div>
+  </section>
+  <article class="single">
+    <div class="singel_copy">
+      <h2>Biography</h2>
+    <p>I was born in Naples, Italy in the wild 80s.</p>
+    <p> I studied computer science and made programming my greatest passion.</p>
+    <p>  I lived many years in Barcelona and Berlin before ending up in Brussels. </p>
+     <h3>Skills</h3> 
+      <ul>
+        <li>Problem solving</li> 
+        <li> Dad with super powers</li>
+        <li> Patience</li>
+      </ul>
+        <h3>Things that drive me crazy</h3> 
+        <ul>
+          <li> Pizza</li> 
+          <li>  Pizza</li>
+          <li>  Pizza</li> 
+          </ul>
+      
+      
+        
+      <p>Yes i love pizza...</p>
+        
+      <img src="https://media.giphy.com/media/jn2iXu2HRpMuovBrrV/giphy.gif" alt="pizza">
+      
+      <h3>My Objectives</h3> 
+      <ul>
+        <li> To acquire as much information as possible.</li> 
+        <li>  Get to know people who share my passion</li>
+        <li>  Challenge myself to improve my skills.</li> 
+        </ul>
+    
+    </div>
+  </article>
+
+<footer class="footer">
+  <p>Copiright - Ivan D'Andrea - 2021</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".header_icon-bar").click(function(e){
+
+      $(".header_menu").toggleClass('is-open');
+      e.preventDefault();
+    });
+  });
+
+
+
+</script>
+  </body>
+</html>
