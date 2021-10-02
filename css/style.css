@@ -125,6 +125,7 @@ body{
   justify-content: center;
   align-items: center
 }
+
 .social_logo p{
   color:#3D56B2;
   font-size: 20px;
@@ -145,6 +146,11 @@ body{
   align-self:flex-start;
   padding-left: 5%;
   
+}
+.section_container{
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 /*Articles*/
 .container{
@@ -264,7 +270,18 @@ font-family:Arial;
 .cover_text figure:first-of-type{
   padding-left: 0;
   margin-left: 0;
-  
+}
+.container{
+  height: 50%;
+}
+.section_container{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.contact_container{
+  height: 50%;
 }
    
  }
