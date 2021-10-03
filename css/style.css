@@ -97,9 +97,9 @@ body{
   padding:5px; 
   color:var(--fourth_hex); }
 .footer p {margin-left: 5px;}
+
 .footer li{
  
-  padding-right: 5px;
   display:inline-block;
 }
 
@@ -177,7 +177,7 @@ label {
   display:block;
   margin-top:50px;
   letter-spacing:1px;
-  color: var(--prim_hex);
+  color: var(--fourth_hex);
 }
 form {
   display: flex;
