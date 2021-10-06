@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+.back_image{
+    background-image: url("../img/bckimg.jpg");
+    background-position: left;
+    background-size: contain;
+ 
+}
+
+.link-menu {
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+.link-menu:hover {
+  background-color: #ffc107;
+  color: #343a40;
+ 
+  border-radius: 5px;
+}
+#logo{
+   width: 50px;
+   border: 3px solid #343a40;
+}
+
+.shadowcard{
+    box-shadow: 5px 10px 18px #111111;
+}
+
+.cardimg{
+    align-self: center;
+    padding-top: 16px;
+    width: 80%;
+    height: 60%;
+}
