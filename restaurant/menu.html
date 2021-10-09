@@ -18,7 +18,7 @@
 
 <body class=" back_image">
     <!--Navigation Bar-->
-    <nav class="navbar  navbar-expand-lg navbar-light bg-dark sticky-top  mb-2 ">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-dark sticky-top  ">
         <div class="container-fluid">
             <a href="#" class="navbar-brand  mb-0 me-5 ml-5 h1 text-warning">
                 <img src="./src/img/pizza-slice-solid.svg" alt="Brand Logo" class=" d-inline-block bg-warning align-self-center rounded-circle "> 280g
@@ -71,9 +71,9 @@
         </div>
     </nav>
     <!--Menu-->
-    <div class="container">
-        <div class="row bg- bg-warning shadowcard mb-5">
-            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+    <div class="container-fluid">
+        <div class="row  bg-warning shadowed ">
+            <div class="col text-center">
                 <img src="./src/img/pizza-slice-solid.svg " id="logo" class="rounded-circle border-dark mt-4" alt="Brand Logo">
                 <br>
                 <h1 class="page-title">Our Tasty Menu</h1>
@@ -81,14 +81,15 @@
             </div>
         </div>
     </div>
-    <div class="row bg-transparent me-2">
+
+    <div class="container-fluid">
         <!--Antipasti-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="menu-section bg-warning shadowcard">
+        <div class="row justify-content-center mt-3 ">
+            <div class="col-12 col-lg-6 bg-warning mb-2">
                 <h3 class="menu-title">Antipasti</h3>
                 <div class="menu-content">
                     <div class="row justify-content-around">
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12  ">
                             <div class="dish-content">
                                 <h5 class="dish-title">Frittura mista</h5>
                                 <span class="dish-element">Crochhé  /  Arancini / Frittatine</span>
@@ -109,8 +110,8 @@
             </div>
         </div>
         <!--Pizza-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="menu-section bg-warning shadowcard">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-6 bg-warning mb-2">
                 <h3 class="menu-title">Pizza</h3>
                 <div class="menu-content">
                     <div class="row justify-content-around">
@@ -156,10 +157,9 @@
                 </div>
             </div>
         </div>
-
         <!--Dessert-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="menu-section bg-warning shadowcard">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-6 bg-warning mb-2">
                 <h3 class="menu-title">Dessert</h3>
                 <div class="menu-content">
                     <div class="row justify-content-around">
@@ -183,17 +183,15 @@
                 </div>
             </div>
         </div>
-
-
         <!--Drink-->
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="menu-section bg-warning shadowcard">
+        <div class="row justify-content-center mb-3">
+            <div class="col-12 col-lg-6 bg-warning ">
                 <h3 class="menu-title">Drink</h3>
                 <div class="menu-content ">
                     <div class="row justify-content-around">
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <div class="dish-content">
-                                <h5 class="dish-title">Peroni</h5>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12  ">
+                            <div class="dish-content ">
+                                <h5 class="dish-title ">Peroni</h5>
                                 <span class="dish-element">Italian Beer</span>
                                 <div class="dish-price">
                                     <p>3.5 €</p>
@@ -218,11 +216,13 @@
                 </div>
             </div>
         </div>
+
+
+
+
     </div>
-
-
     <!--Footer-->
-    <footer class="bg-dark text-white pt-5 pb-4">
+    <footer class="bg-dark text-white pt-4 pb-3">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
                 <!--Footer title-->
@@ -295,23 +295,23 @@
                     <div class="text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                                        class="fab fa-facebook"></i></a>
+                                <a href="#" class="btn-floating btn-sm text-white" aria-label="facebook_link"style="font-size: 23px;"><i
+                                class="fab fa-facebook"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                <a href="#" class="btn-floating btn-sm text-white" aria-label="twitter_link"style="font-size: 23px;"><i
                                         class="fab fa-twitter"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                <a href="#" class="btn-floating btn-sm text-white" aria-label="instagram_link" style="font-size: 23px;"><i
                                         class="fab fa-instagram-square"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                <a href="#" class="btn-floating btn-sm text-white" aria-label="yelp_link" style="font-size: 23px;"><i
                                         class="fab fa-yelp"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                <a href="#" class="btn-floating btn-sm text-white" aria-label="youtube_link"style="font-size: 23px;"><i
                                         class="fab fa-youtube"></i></a>
                             </li>
                         </ul>
