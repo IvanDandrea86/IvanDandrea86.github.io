@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Ivan D'Andrea Junior Web Developer</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
 
@@ -18,126 +19,106 @@
 <body>
     <!--Header Menu-->
     <header class="header_menu">
-        <div class="logo "></div>
+        <div class="logo"> </div>
         <nav class=" nav_bar ">
             <ul>
-                <li class="button"> <a href="https://ivandandrea86.github.io/#Welcome" aria-label="Welcome Page">About Me</a></li>
-                <li class="button"><a href="https://ivandandrea86.github.io/#works" aria-label="List of my works and projects">Works </a></li>
-                <li class="button">
-                    <a href="https://ivandandrea86.github.io/#skills" aria-label="List of my talents and skills"></a>Skills </a>
+                <li class="button"> 
+                    <a href="#welcome" aria-label="Welcome Page">About Me</a>
                 </li>
-                <li class="button"> <a href="https://ivandandrea86.github.io/#contact" aria-label="Contact Formr">Contact Me</a> </li>
+                <li class="button">
+                    <a href="#works" aria-label="List of my works and projects">Works </a>
+                </li>
+                <li class="button">
+                    <a href="#skills" aria-label="List of my talents and skills">Skills</a>
+                </li>
+                <li class="button"> <a href="#contact" aria-label="Contact Formr">Contact Me</a> 
+                </li>
             </ul>
         </nav>
 
     </header>
     <!--Welcome Cover Section-->
-    <section id="Welcome" class="cover">
+    
+    <section id="welcome" class="cover">
         <div class="cover_text">
             <h1>Welcome </h1>
             <h1>I'am Ivan D'Andrea</h1>
             <div class="social_logo">
-                <p class="right_border">Junior Web Dev </p>
-                <p> Pizza Lover </p>
+                <p >Junior Web Developer </p>
+                
             </div>
-            <div class="social_logo">
-                <div> <a href='https://github.com/IvanDandrea86' aria-label="Github" target='_blank'><i title="Github Logo"class="fab fa-github-square"></i></a></div>
-                <div>
-                    <a href='https://www.linkedin.com/in/ivan-d-andrea-956ba7214/' aria-label="Linkedin" target='_blank'></a><i title="Linkedin Logo" class="fab fa-linkedin"></i></div>
-            </div>
-
-            <h2>My favourite quote</h2>
-            <figure class="box_quotation">
-                <blockquote>
-                    <q> People are capable, at any time in their lives, of doing what they dream of.</q>
-                </blockquote>
-                <figcaption>-Paolo Coelho, <cite>The Alchimist</cite></figcaption>
-            </figure>
-
-
         </div>
+            <div class="social_logo">
+                <a href='https://github.com/IvanDandrea86' aria-label="Github" target='_blank'><i title="Github Logo"class="fab fa-github-square"></i></a>
+                <a href='https://www.linkedin.com/in/ivan-d-andrea-956ba7214/' aria-label="Linkedin" target='_blank'></a><i title="Linkedin Logo" class="fab fa-linkedin"></i>
+            </div>
 
-
+            
+            <figure >
+                <blockquote>
+                    <q> Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity.</q>
+                </blockquote>
+                <figcaption>-Aaron Swartz </figcaption>
+            </figure>
     </section>
+   
     <!--Works Section-->
     <section id="works">
-        <div class="contact_container">
-            <h1 class=section_title>My Works</h1>
-            <div class="container">
+        <h2 class=section_title>My Works</h2>
+        <div class="container ">
+            
                 <article>
                     <div class="card">
-                        <h2>Restorant-Bootsrap</h2>
-                        <img src="./img/restaurant snapshot.png" alt="Project snapshot" class="maxdim">
-                    
+                        <h3>Restorant-Bootsrap</h3>
+                        <div class="img_frame"> <img src="./img/restaurant snapshot.png" alt="Project snapshot"></div>
                         <p>A simple Web site of a restaurant created using Bootsrap 5. Not yet completed</p>
                         <a href="https://ivandandrea86.github.io/restaurant-css-framework/" class="button"> Visit</a>
                     </div>
                 </article>
                 <article>
                     <div class="card">
-                        <h2>Project 2</h2>
-                         <img src="./img/Hang_screenshoot
-.png" alt="Project snapshot" class="maxdim">
+                        <h3>Hangman</h3>
+                        <div class="img_frame"><img src="./img/hang_screenshot.png" alt="Project snapshot" ></div>
                         <p>A simple Web site of game Hangman</p>
                         <a href="https://ivandandrea86.github.io/hangman/" class="button"> Visit</a>                  
                     </div>
                 </article>
-                <article>
-                    <div class="card">
-                        <h2>Project 3</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quas itaque eaque, eius veniam deserunt in earum doloribus nulla quaerat porro expedita ullam commodi officiis accusamus quasi! Amet, enim ipsum?
-                        </p>
-                    </div>
-            </div>
-            </article>
-
-        </div>
+        
     </section>
     <!--Skills section-->
     <section id="skills">
-        <div class="contact_container">
-            <h1 class="section_title">Skills</h1>
+        <div class="cover">
+            <h2 class="section_title">Skills</h2>
             <div class="social_logo">
-
-                <div><i title="html 5 Logo" class="fab fa-html5"></i></div>
-                <div> <i title="CSS 3 Logo" class="fab fa-css3-alt"></i></div>
-                <div> <i title="JS Logo" class="fab fa-js-square"></i></div>
-                <div> <i title="Python Logo" class="fab fa-python"></i></div>
-                <div> <i title="Node.js Logo" class="fab fa-node"></i></div>
+                <i title="html 5 Logo" class="fab fa-html5"></i>
+                 <i title="CSS 3 Logo" class="fab fa-css3-alt"></i>
+                 <i title="JS Logo" class="fab fa-js-square"></i>
+                 <i title="Python Logo" class="fab fa-python"></i>
+                 <i title="Node.js Logo" class="fab fa-node"></i>
             </div>
         </div>
     </section>
 
     <!--Contact Section-->
     <section id="contact">
-        <div class="contact_container">
-            <h1 class="section_title">Contact Me</h1>
-            <form>
+        <h1 class="section_title">Contact Me</h1>
+        <div class="container center">
+            <form class="contact_form">
                 <label> Name:</label>
                 <input name="name" placeholder="wrtite your name here">
                 <label> Email:</label>
                 <input name="email" type="email" placeholder="write your email here">
                 <label>Message:</label>
                 <textarea name="message" placeholder="write your message here"></textarea>
-                <input id="submit" name="submit" type="submit" value="Submit" class="button">
+                <button class="button">Submit</button>
             </form>
         </div>
     </section>
-    <footer class="footer">
-        <ul>
-            <a href="https://ivandandrea86.github.io/#Welcome">
-                <li class="right_border"> Home </li>
-            </a>
-            <a href="https://ivandandrea86.github.io/#works">
-                <li class="right_border"> Works </li>
-            </a>
-            <a href="https://ivandandrea86.github.io/#skills">
-                <li class=> Skills</li>
-            </a>
-        </ul>
+    <footer class="container">
+       
         <p> Ivan D'Andrea 2021</p>
     </footer>
-
+<script src="./js/script.js"></script>
 </body>
 
 </html>

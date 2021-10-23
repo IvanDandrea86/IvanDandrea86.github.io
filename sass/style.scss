@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import 'colors';
+@import 'variables';
+@import 'buttons';
+@import 'responsive';
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: $third_hex;
+    color:$fourth_hex;
+    
+    
+    .header_menu{
+        background-color: $sec_hex;
+        display: flex;
+        justify-content: center;
+        .nav_bar{
+            li{
+            display: inline-block;
+            
+            margin-right: 5px;
+            }
+           
+        }
+    }
+   
+    .cover{
+        background-color: $fourth_hex;
+        color: $sec_hex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        .cover_text{
+            margin-top: 25px;
+            text-align: center;
+            p{
+                margin: 5px;
+                width: fit-content;
+            }
+        }
+        .social_logo{
+            display: flex;
+            justify-content: center;
+            &>*{
+                flex-wrap: wrap;
+
+            }
+            p{
+                margin-left: 0;;
+            }
+        }
+        i{
+            color: $third_hex;
+            font-size: 32px;
+            margin: 15px;
+        }  
+        figure{
+            box-shadow: 0px 15px 20px rgba(92, 122, 234, 0.4);
+            border-radius: 5px;
+            padding:5px;
+            border-left: 2px solid $sec_hex;
+            border-bottom:2px solid $third_hex; 
+        }
+        
+    }
+    
+
+    .container{
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        
+    }
+    .section_title{
+        text-align: center;
+    }
+    
+
+    .card{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    
+        h3{
+            text-align: center;
+        }
+
+        .img_frame{
+            align-self: center;
+        width: 30%;
+        height: 200%;
+            img{
+           
+            height: 100%;
+            width: 100%;
+            }
+        }
+        a,p{
+            width: fit-content ;  
+            align-self: center;   
+        }
+       
+    }
+    footer {
+        background-color: $prim_hex;
+        display: flex;
+        justify-content: center;
+
+    }
+    .contact_form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        border: 1px solid red;
+        border-radius: 5px;
+        label{
+            text-align: center;
+        
+        }
+        button{
+            color:$fourth_hex;
+        }
+        
+    }
+    #contact{
+        align-items: center;
+        
+    }
+}
+
+
+
+
