@@ -37,7 +37,7 @@
     height: 100vh;
   }
   #contact {
-    height: 800vh;
+    height: 50vh;
   }
   .cover {
     -webkit-box-align: center;
@@ -59,6 +59,132 @@
   }
 }
 
+#contact {
+  display: none;
+  position: fixed;
+  z-index: 8;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#contact .contact_form {
+  -webkit-box-shadow: 0px 15px 20px rgba(92, 122, 234, 0.4);
+          box-shadow: 0px 15px 20px rgba(92, 122, 234, 0.4);
+  border-radius: 5px;
+  border-top: 2px solid #5C7AEA;
+  border-right: 2px solid #3D56B2;
+  border-left: 2px solid #3D56B2;
+  border-bottom: 2px solid #5C7AEA;
+  background-color: #E6E6E6;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  margin: 15px 0px 15px 15px;
+  color: #14279B;
+  border-radius: 15px;
+}
+
+#contact .contact_form label {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+#contact .contact_form input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#contact .contact_form textarea {
+  height: 40%;
+}
+
+#contact .contact_form button {
+  color: #14279B;
+}
+
+#close {
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  width: 15px;
+  height: 100%;
+  background-color: #3D56B2;
+}
+
+/* Icon 1 */
+.hamburger {
+  top: 5%;
+  left: 85%;
+  width: 50px;
+  height: 6px;
+  background: #FCFCFC;
+  position: absolute;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger:before {
+  top: -16px;
+}
+
+.hamburger:after {
+  top: 16px;
+}
+
+.icon-one {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.hamburger-one:before,
+.hamburger-one:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #FCFCFC;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.icon-one.active-one .hamburger-one {
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon-one.active-one .hamburger-one:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.icon-one.active-one .hamburger-one:after {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #5C7AEA;
@@ -78,6 +204,12 @@ body .header_menu {
 body .header_menu .nav_bar li {
   display: inline-block;
   margin-right: 5px;
+}
+
+body .header_menu .icone-one {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 body .cover {
@@ -141,6 +273,8 @@ body .cover figure {
   padding: 5px;
   border-left: 2px solid #3D56B2;
   border-bottom: 2px solid #5C7AEA;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 body .container {
@@ -166,19 +300,21 @@ body .card {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 400px;
   margin: 15px;
 }
 
 body .card h3 {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 body .card .img_frame {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 30%;
-  height: 200%;
+  width: 350x;
+  height: 280px;
 }
 
 body .card .img_frame img {
@@ -203,32 +339,5 @@ body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-body .contact_form {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid red;
-  border-radius: 5px;
-}
-
-body .contact_form label {
-  text-align: center;
-}
-
-body .contact_form button {
-  color: #E6E6E6;
-}
-
-body #contact {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
