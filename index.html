@@ -19,32 +19,34 @@
 <body>
     <!--Header Menu-->
     <header class="header_menu">
-        <div class="logo"> </div>
-        <nav class=" nav_bar ">
+        <div class="logo"> Ivan D'Andrea</div>
+        <nav id="menu_list" class="nav_bar" style="display:none">
+            <a class="btnMenu" id="close" >Close</a>
             <ul>
-                <li class="button"> 
-                    <a href="#welcome" aria-label="Welcome Page">About Me</a>
+                <li class="nav_bar_item"> 
+                    <a href="#welcome" aria-label="Welcome Page">Bio</a>
                 </li>
-                <li class="button">
-                    <a href="#works" aria-label="List of my works and projects">Works </a>
+                <li class="nav_bar_item">
+                    <a href="#works" aria-label="List of my works and projects">Projects</a>
                 </li>
-                <li class="button">
+                <li class="nav_bar_item">
                     <a href="#skills" aria-label="List of my talents and skills">Skills</a>
                 </li>
                 <li > 
+                    <li class="nav_bar_item">
+                        <a href="#contact" aria-label="Contact form">Contact</a>
+                    </li>
                 </li>
             </ul>
         </nav>
-        <button class="button" id="contact-me"> Contact Me </button> 
-        
-        <div class="icon-one">
-            <div class="hamburger hamburger-one"></div>
-          </div>
+         
+            <a class="btnMenu" id="menu" >Menu</a>
+          
         
     </header>
     <!--Welcome Cover Section-->
     
-    <section id="welcome" class="cover">
+    <section id="wellcome" >
         <div class="cover_text">
             <h1>Welcome </h1>
             <h1>I'am Ivan D'Andrea</h1>
@@ -57,8 +59,6 @@
                 <a href='https://github.com/IvanDandrea86' aria-label="Github" target='_blank'><i title="Github Logo"class="fab fa-github-square"></i></a>
                 <a href='https://www.linkedin.com/in/ivan-d-andrea-956ba7214/' aria-label="Linkedin" target='_blank'></a><i title="Linkedin Logo" class="fab fa-linkedin"></i>
             </div>
-
-            
             <figure >
                 <blockquote>
                     <q> Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity.</q>
@@ -69,26 +69,30 @@
    
     <!--Works Section-->
     <section id="works">
-        <h2 class=section_title>My Works</h2>
-        <div class="container ">
-            
+        <h2 class=section_title>Works</h2>
+        <div class="cards ">
                 <article>
                     <div class="card">
                         <h3>Restorant-Bootsrap</h3>
-                        <div class="img_frame"> <img src="./img/restaurant snapshot.png" alt="Project snapshot"></div>
                         <p>A simple Web site of a restaurant created using Bootsrap 5. Not yet completed</p>
                         <a href="https://ivandandrea86.github.io/restaurant-css-framework/" class="button"> Visit</a>
-                    </div>
                 </article>
                 <article>
                     <div class="card">
                         <h3>Hangman</h3>
-                        <div class="img_frame"><img src="./img/hang_screenshot.png" alt="Project snapshot" ></div>
                         <p>A simple Web site of game Hangman</p>
                         <a href="https://ivandandrea86.github.io/hangman/" class="button"> Visit</a>                  
                     </div>
                 </article>
-        
+                <article>
+                    <div class="card">
+                        <h3>CookieClicker</h3>
+                        <p>Our verison of the famous CookieCliker Idle</p>
+                        <a href="https://ivandandrea86.github.io/hangman/" class="button"> Visit</a>                  
+                    </div>
+                </article>
+                
+        </div>
     </section>
     <!--Skills section-->
     <section id="skills">
@@ -107,26 +111,15 @@
     <!--Contact Section-->
     <section id="contact">
         <h1 class="section_title">Contact Me</h1>
-        <div class="container center">
-            
-            <form class="contact_form">
-                <label> Name:</label>
-                <input name="name" placeholder="wrtite your name here">
-                <label> Email:</label>
-                <input name="email" type="email" placeholder="write your email here">
-                <label>Message:</label>
-                <textarea name="message" placeholder="write your message here"></textarea>
-                <button class="button">Submit</button>
-            </form>
-            <button class ="button" id="close">&times;</button>
-        </div>
+        
+       
     </section>
     <footer class="container">
        
         <p> Ivan D'Andrea 2021</p>
     </footer>
-<script src="./js/form.js "></script>
-<script src="./js/hamburgher.js "></script>
+<script src="./js/menu.js "></script>
+
 </body>
 
 </html>
