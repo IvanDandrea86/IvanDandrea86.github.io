@@ -1,21 +1,24 @@
 @import 'animation';
+@import'colors';
 .nav_bar {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: black;
-    opacity: 0.75;
-    color: white;
+    background-color: $primary;
+    opacity: 0.95;
+    color: $secondary;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: scale(0);
     transition: 1.5s;
+    z-index: 2;
     .nav_bar_item:hover {
         animation: focusText 1.5s ease-out;
         animation-fill-mode: forwards;
         background: transparent;
+        // color: $third;
     }
     li,
     a {
@@ -31,8 +34,9 @@
             top: 100%;
             left: 0;
             width: 100%;
+            background: $third;
             height: 2px;
-            background: white;
+            color: $third;
             transform: translateY(-50%) scaleX(0);
             transform-origin: right;
             transition: 1s transform;
@@ -50,5 +54,8 @@
         top: 25px;
         right: 25px;
         font-size: calc(1vh + 12px);
+        &:hover {
+            color: $third;
+        }
     }
 }

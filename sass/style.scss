@@ -3,7 +3,9 @@
 @import 'cover';
 @import 'colors';
 body {
+    background-color: $secondary;
     font-family: 'Open Sans', sans-serif;
+    color: $primary;
     .header_menu {
         display: flex;
         justify-content: space-between;
