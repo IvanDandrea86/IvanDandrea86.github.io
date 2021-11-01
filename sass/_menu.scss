@@ -1,15 +1,21 @@
 @import 'animation';
 .nav_bar {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100vh;
     background-color: black;
-    opacity: 0.95;
+    opacity: 0.75;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: scale(0);
+    transition: 0.5s;
     li,
     a {
         align-self: center;
