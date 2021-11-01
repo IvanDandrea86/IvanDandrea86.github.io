@@ -1,6 +1,6 @@
 const menuBtn = document.getElementById("menu")
 const closeBtn = document.getElementById("close")
-var listItem = document.getElementsByClassName("nav_bar_item")
+var listItem = document.querySelectorAll(".nav_bar_item a")
 console.log(Array.from(listItem))
 let closeMenu = () => {
     let menu = document.getElementById("menu_list")
@@ -19,7 +19,7 @@ closeBtn.addEventListener("click", () => {
 })
 Array.from(listItem).forEach((element) => {
     element.addEventListener('click', () => {
-        setTimeout(closeMenu, 500)
+        setTimeout(closeMenu, 1500)
 
     })
 });

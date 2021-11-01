@@ -4,11 +4,13 @@
 body {
     font-family: 'Open Sans', sans-serif;
     .header_menu {
-        position: sticky;
         display: flex;
         justify-content: space-between;
         margin: 2vh;
         margin-top: 3vh;
+        .btnMenu {
+            cursor: pointer;
+        }
     }
     .active {
         transform: scale(1);
