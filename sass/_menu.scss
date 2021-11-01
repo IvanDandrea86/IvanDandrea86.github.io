@@ -11,10 +11,11 @@
     justify-content: center;
     align-items: center;
     transform: scale(0);
-    transition: 0.5s;
+    transition: 1.5s;
     .nav_bar_item:hover {
         animation: focusText 1.5s ease-out;
         animation-fill-mode: forwards;
+        background: transparent;
     }
     li,
     a {
@@ -51,8 +52,3 @@
         font-size: calc(1vh + 12px);
     }
 }
-
-// .nav_bar_item:hover {
-//     animation: focusText 1.5s ease-out;
-//     animation-fill-mode: forwards;
-// }

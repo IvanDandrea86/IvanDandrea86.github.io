@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import 'menu';
-@import 'responsive';
+@import 'cover';
+@import 'colors';
 body {
     font-family: 'Open Sans', sans-serif;
     .header_menu {
@@ -24,3 +25,5 @@ body {
         justify-content: center;
     }
 }
+
+@import 'responsive';
