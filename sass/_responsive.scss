@@ -4,4 +4,13 @@
             height: 100vh;
             left: 25%;
         }
+        canvas{
+            position: fixed;
+            align-self: center;
+            opacity: 0.3;
+            left: 30%;
+            width: auto;
+            height :40vh;
+            z-index: -1;
+          }
     }

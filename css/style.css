@@ -291,6 +291,18 @@
   text-align: center;
 }
 
+canvas {
+  position: fixed;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  opacity: 0.3;
+  left: 10%;
+  width: auto;
+  height: 100vh;
+  z-index: -1;
+}
+
 body {
   background-color: #DDDDDD;
   font-family: 'Open Sans', sans-serif;
@@ -304,8 +316,8 @@ body .header_menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2vh;
-  margin-top: 3vh;
+  margin: 2rem;
+  margin-top: 3rem;
 }
 
 body .header_menu .btnMenu {
@@ -368,6 +380,17 @@ body footer {
     width: 50%;
     height: 100vh;
     left: 25%;
+  }
+  canvas {
+    position: fixed;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    opacity: 0.3;
+    left: 30%;
+    width: auto;
+    height: 40vh;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=style.css.map */

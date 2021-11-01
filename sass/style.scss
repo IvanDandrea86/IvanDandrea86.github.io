@@ -5,6 +5,7 @@
 @import 'colors';
 @import 'animation';
 @import 'cards';
+@import 'canvas';
 body {
     background-color: $secondary;
     font-family: 'Open Sans', sans-serif;
@@ -12,8 +13,8 @@ body {
     .header_menu {
         display: flex;
         justify-content: space-between;
-        margin: 2vh;
-        margin-top: 3vh;
+        margin: 2rem;
+        margin-top: 3rem;
         .btnMenu {
             top: 2.55%;
             right: 5%;
