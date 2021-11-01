@@ -1,6 +1,9 @@
 @keyframes focusText {
-    
-    50%{transform: translateY(25%);transform:  translateX(25%);  }
-   
-    100%  {transform: scale(2.0);}
+    50% {
+        transform: translateY(25%);
+        transform: translateX(25%);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }

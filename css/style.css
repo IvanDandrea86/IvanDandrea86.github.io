@@ -7,8 +7,8 @@
             transform: translateX(25%);
   }
   100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 @keyframes focusText {
@@ -19,16 +19,17 @@
             transform: translateX(25%);
   }
   100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
 .nav_bar {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: black;
+  opacity: 0.95;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,30 +41,67 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav_bar li, .nav_bar a {
-  margin: 3rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  text-align: start;
+.nav_bar li,
+.nav_bar a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1rem;
+  text-align: center;
   font-size: calc(2vh + 15px);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav_bar li > *:before,
+.nav_bar a > *:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  opacity: 0.95;
+  -webkit-transform: translateY(-50%) scaleX(0);
+          transform: translateY(-50%) scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: 1s -webkit-transform;
+  transition: 1s -webkit-transform;
+  transition: 1s transform;
+  transition: 1s transform, 1s -webkit-transform;
+}
+
+.nav_bar li > *:hover:before,
+.nav_bar a > *:hover:before {
+  -webkit-transform: translateY(-50%) scaleX(1);
+          transform: translateY(-50%) scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 1s -webkit-transform;
+  transition: 1s -webkit-transform;
+  transition: 1s transform;
+  transition: 1s transform, 1s -webkit-transform;
 }
 
 .nav_bar .btnMenu {
+  cursor: pointer;
   position: absolute;
   margin: 5px;
   top: 25px;
   right: 25px;
-  font-size: calc(2vh + 5px);
+  font-size: calc(1vh + 12px);
 }
 
 .nav_bar_item:hover {
-  -webkit-animation: focusText 2s ease-out;
-          animation: focusText 2s ease-out;
+  -webkit-animation: focusText 1s ease-out;
+          animation: focusText 1s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
