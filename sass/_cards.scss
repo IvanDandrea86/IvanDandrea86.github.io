@@ -1,0 +1,12 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    .card {
+        height: 30vh;
+        width: 50vw;
+        text-align: center;
+    }
+}

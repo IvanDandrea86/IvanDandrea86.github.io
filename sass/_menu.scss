@@ -1,5 +1,3 @@
-@import 'animation';
-@import'colors';
 .nav_bar {
     position: fixed;
     width: 100%;
@@ -47,13 +45,14 @@
             transition: 1s transform;
         }
     }
-    .btnMenu {
+    .btnClose {
         cursor: pointer;
         position: absolute;
         margin: 5px;
         top: 25px;
         right: 25px;
         font-size: calc(1vh + 12px);
+        color: $secondary;
         &:hover {
             color: $third;
         }

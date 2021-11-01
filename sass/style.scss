@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import 'colors';
 @import 'menu';
 @import 'cover';
 @import 'colors';
+@import 'animation';
+@import 'cards';
 body {
     background-color: $secondary;
     font-family: 'Open Sans', sans-serif;
@@ -12,7 +15,16 @@ body {
         margin: 2vh;
         margin-top: 3vh;
         .btnMenu {
+            top: 2.55%;
+            right: 5%;
             cursor: pointer;
+            color: $primary;
+            font-weight: bold;
+            &:hover {
+                color: $third;
+                font-weight: normal;
+                transform: scale(0.9);
+            }
         }
     }
     .active {
@@ -23,8 +35,17 @@ body {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        .section_title {
+            color: $third;
+            margin-top: 10vh;
+            justify-content: start;
+        }
+    }
+    footer {
+        display: flex;
+        justify-content: center
     }
 }
 

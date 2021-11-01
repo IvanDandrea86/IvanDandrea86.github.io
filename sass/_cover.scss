@@ -1,37 +1,35 @@
-    @import 'colors';
-    @import 'animation';
-    #wellcome {
-        .cover_text {
-            h1 {
-                animation-name: topdown;
-                animation-duration: 3s;
-                animation-fill-mode: forwards;
-                animation-timing-function: ease-out;
-                margin: 0.5rem;
-            }
-            p {
-                margin: 0.5rem;
-                text-align: center;
-                animation-name: fromleft;
-                animation-duration: 2s;
-                animation-fill-mode: forwards;
-            }
+#wellcome {
+    .cover_text {
+        color: $primary;
+        h1 {
+            animation-name: topdown;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+            margin: 0.5rem;
         }
-        .logo_container {}
-        figure {
-            border: 1px solid $primary;
-            margin: calc(1vw + 10px);
-            padding: calc(1vw + 10px);
-            blockquote {
-                q {
-                    animation-duration: 3s;
-                    animation-name: slidein;
-                    animation-fill-mode: forwards;
-                    animation-timing-function: ease-out;
-                }
-            }
-            figcaption {
-                font-size: 12px;
-            }
+        p {
+            margin: 0.5rem;
+            text-align: center;
+            animation-name: fromleft;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
         }
     }
+    figure {
+        border: 1px solid $primary;
+        margin: calc(1vw + 10px);
+        padding: calc(1vw + 10px);
+        blockquote {
+            q {
+                animation-duration: 3s;
+                animation-name: slidein;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
+            }
+        }
+        figcaption {
+            font-size: 12px;
+        }
+    }
+}
