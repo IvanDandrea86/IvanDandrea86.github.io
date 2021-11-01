@@ -1,5 +1,12 @@
-var menuBtn = document.getElementById("menu")
-var closeBtn = document.getElementById("close")
+const menuBtn = document.getElementById("menu")
+const closeBtn = document.getElementById("close")
+var listItem = document.getElementsByClassName("nav_bar_item")
+console.log(Array.from(listItem))
+let closeMenu = () => {
+    let menu = document.getElementById("menu_list")
+    menu.style.visibility = "hidden"
+    menu.classList.toggle("active")
+}
 menuBtn.addEventListener("click", () => {
     let menu = document.getElementById("menu_list")
     menu.style.visibility = "inherit"
@@ -10,3 +17,9 @@ closeBtn.addEventListener("click", () => {
     menu.style.visibility = "hidden"
     menu.classList.toggle("active")
 })
+Array.from(listItem).forEach((element) => {
+    element.addEventListener('click', () => {
+        setTimeout(closeMenu, 500)
+
+    })
+});
