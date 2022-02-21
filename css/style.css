@@ -95,6 +95,7 @@
 }
 
 #wellcome .cover_text h1 {
+  font-size: 3rem;
   -webkit-animation-name: topdown;
           animation-name: topdown;
   -webkit-animation-duration: 5s;
@@ -107,6 +108,7 @@
 }
 
 #wellcome .cover_text p {
+  font-size: 1.5rem;
   margin: 0.5rem;
   text-align: center;
   -webkit-animation-name: fromleft;
@@ -121,6 +123,17 @@
   border: 1px solid #30475E;
   margin: calc(1vw + 10px);
   padding: calc(1vw + 10px);
+}
+
+#wellcome figure blockquote q {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 #wellcome figure figcaption {
@@ -347,8 +360,8 @@ body section {
 }
 
 body section .section_title {
+  font-size: 2.5rem;
   color: #222831;
-  margin-top: 10vh;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
