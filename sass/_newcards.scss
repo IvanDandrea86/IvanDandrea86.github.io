@@ -28,6 +28,10 @@
         // background-color: #e0e0e0;
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
+        img{
+            object-fit: cover; 
+            width: 100%;
+        }
      
       }
       .card-body {

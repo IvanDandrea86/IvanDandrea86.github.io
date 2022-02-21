@@ -311,6 +311,12 @@ canvas {
   border-top-right-radius: 0.5rem;
 }
 
+.cards-container .card .card-figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .cards-container .card .card-body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
