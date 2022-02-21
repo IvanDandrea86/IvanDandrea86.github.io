@@ -16,12 +16,10 @@
         animation: focusText 1.5s ease-out;
         animation-fill-mode: forwards;
         background: transparent;
-        // color: $third;
     }
     li,
     a {
         align-self: center;
-        margin: 1rem;
         text-align: center;
         font-size: calc(2vh + 15px);
         position: relative;
@@ -30,7 +28,6 @@
             content: "";
             position: absolute;
             top: 100%;
-            left: 0;
             width: 100%;
             background: $third;
             height: 2px;
@@ -47,7 +44,7 @@
     }
     .btnClose {
         cursor: pointer;
-        position: absolute;
+        position: fixed;
         margin: 5px;
         top: 25px;
         right: 25px;

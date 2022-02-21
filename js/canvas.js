@@ -26,8 +26,8 @@ let dots = []; // Every dots in an array
 /* ====== CONSTANTS ===== */
 /* ====================== */
 /* Some of those constants may change if the user resizes their screen but I still strongly believe they belong to the Constants part of the variables */
-const DOTS_AMOUNT = 1000; // Amount of dots on the screen
-const DOT_RADIUS = 4; // Radius of the dots
+const DOTS_AMOUNT = 5000; // Amount of dots on the screen
+const DOT_RADIUS = 2; // Radius of the dots
 let GLOBE_RADIUS = width * 0.7; // Radius of the globe
 let GLOBE_CENTER_Z = -GLOBE_RADIUS; // Z value of the globe center
 let PROJECTION_CENTER_X = width / 2; // X center of the canvas HTML
@@ -48,14 +48,14 @@ class Dot {
   project(sin, cos) {
     const rotX = cos * this.x + sin * (this.z - GLOBE_CENTER_Z);
     const rotZ = -sin * this.x + cos * (this.z - GLOBE_CENTER_Z) + GLOBE_CENTER_Z;
-    this.sizeProjection = FIELD_OF_VIEW / (FIELD_OF_VIEW - rotZ);
+     this.sizeProjection = FIELD_OF_VIEW / (FIELD_OF_VIEW - rotZ);
     this.xProject = (rotX * this.sizeProjection) + PROJECTION_CENTER_X;
     this.yProject = (this.y * this.sizeProjection) + PROJECTION_CENTER_Y;
   }
   // Draw the dot on the canvas
   draw(sin, cos) {
     this.project(sin, cos);
-    // ctx.fillRect(this.xProject - DOT_RADIUS, this.yProject - DOT_RADIUS, DOT_RADIUS * 2 * this.sizeProjection, DOT_RADIUS * 2 * this.sizeProjection);
+    //  ctx.fillRect(this.xProject - DOT_RADIUS, this.yProject - DOT_RADIUS, DOT_RADIUS * 2 * this.sizeProjection, DOT_RADIUS * 2 * this.sizeProjection);
     ctx.beginPath();
     ctx.arc(this.xProject, this.yProject, DOT_RADIUS * this.sizeProjection, 0, Math.PI * 2);
     ctx.closePath();
@@ -88,7 +88,7 @@ function render(a) {
   ctx.clearRect(0, 0, width, height);
   
   // Increase the globe rotation
-  rotation = a * 0.0004;
+  rotation = a * 0.00014;
   
   const sineRotation = Math.sin(rotation); // Sine of the rotation
   const cosineRotation = Math.cos(rotation); // Cosine of the rotation
@@ -114,7 +114,7 @@ function afterResize () {
     canvas.width = width;
     canvas.height = height;
   }
-  GLOBE_RADIUS = width * 0.7;
+  GLOBE_RADIUS = width * 0.8;
   GLOBE_CENTER_Z = -GLOBE_RADIUS;
   PROJECTION_CENTER_X = width / 2;
   PROJECTION_CENTER_Y = height / 2;

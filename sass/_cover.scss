@@ -3,7 +3,7 @@
         color: $primary;
         h1 {
             animation-name: topdown;
-            animation-duration: 3s;
+            animation-duration: 5s;
             animation-fill-mode: forwards;
             animation-timing-function: ease-out;
             margin: 0.5rem;
@@ -12,7 +12,7 @@
             margin: 0.5rem;
             text-align: center;
             animation-name: fromleft;
-            animation-duration: 2s;
+            animation-duration: 3s;
             animation-fill-mode: forwards;
         }
     }
@@ -22,10 +22,10 @@
         padding: calc(1vw + 10px);
         blockquote {
             q {
-                animation-duration: 3s;
-                animation-name: slidein;
-                animation-fill-mode: forwards;
-                animation-timing-function: ease-out;
+                // animation-duration: 3s;
+                // animation-name: slidein;
+                // animation-fill-mode: forwards;
+                // animation-timing-function: ease-out;
             }
         }
         figcaption {

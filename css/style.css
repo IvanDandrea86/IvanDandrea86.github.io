@@ -39,7 +39,6 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: 1rem;
   text-align: center;
   font-size: calc(2vh + 15px);
   position: relative;
@@ -51,7 +50,6 @@
   content: "";
   position: absolute;
   top: 100%;
-  left: 0;
   width: 100%;
   background: #222831;
   height: 2px;
@@ -80,7 +78,7 @@
 
 .nav_bar .btnClose {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   margin: 5px;
   top: 25px;
   right: 25px;
@@ -99,8 +97,8 @@
 #wellcome .cover_text h1 {
   -webkit-animation-name: topdown;
           animation-name: topdown;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
@@ -113,8 +111,8 @@
   text-align: center;
   -webkit-animation-name: fromleft;
           animation-name: fromleft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -125,27 +123,12 @@
   padding: calc(1vw + 10px);
 }
 
-#wellcome figure blockquote q {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-}
-
 #wellcome figure figcaption {
   font-size: 12px;
 }
 
 @-webkit-keyframes focusText {
-  50% {
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
-    -webkit-transform: translateX(25%);
-            transform: translateX(25%);
+  0% {
   }
   100% {
     -webkit-transform: scale(1.5);
@@ -154,11 +137,7 @@
 }
 
 @keyframes focusText {
-  50% {
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
-    -webkit-transform: translateX(25%);
-            transform: translateX(25%);
+  0% {
   }
   100% {
     -webkit-transform: scale(1.5);
@@ -298,12 +277,14 @@ canvas {
       align-self: center;
   opacity: 0.3;
   left: 10%;
+  top: 14%;
   width: auto;
   height: 100vh;
   z-index: -1;
 }
 
 body {
+  scroll-behavior: smooth;
   background-color: #DDDDDD;
   font-family: 'Open Sans', sans-serif;
   color: #30475E;
@@ -316,11 +297,18 @@ body .header_menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+body .header_menu .logo {
+  position: fixed;
   margin: 2rem;
-  margin-top: 3rem;
 }
 
 body .header_menu .btnMenu {
+  position: fixed;
+  margin: 1rem;
   top: 2.55%;
   right: 5%;
   cursor: pointer;
