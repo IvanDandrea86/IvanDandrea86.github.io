@@ -22,6 +22,8 @@
         border: 1px solid $primary;
         margin: calc(1vw + 10px);
         padding: calc(1vw + 10px);
+        border-radius: 0.5rem;
+        background-color: $secondary;
         blockquote {
             q {
                 animation-duration: 3s;
