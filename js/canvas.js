@@ -86,7 +86,8 @@ function createDots() {
 function render(a) {
   // Clear the scene
   ctx.clearRect(0, 0, width, height);
-  
+  ctx.fillStyle = 'rgba(99, 102, 241, 0.55)';
+
   // Increase the globe rotation
   rotation = a * 0.00014;
   
