@@ -102,10 +102,11 @@
             align-items: center;
             gap: 2.5rem;
             transform: scale(0);
+            visibility: hidden;
             transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
             z-index: 200;
         }
-        .nav_bar.active { transform: scale(1); }
+        .nav_bar.active { transform: scale(1); visibility: visible; }
         .nav_bar .btnClose {
             position: absolute;
             top: 1.5rem; right: 2.5rem;
@@ -603,6 +604,10 @@
             .container { padding: 0 1.25rem; }
             .timeline::before { display: none; }
         }
+        .img-invert-70 { filter: invert(0.7); }
+        .img-invert-80 { filter: invert(0.8); }
+        .contact-text { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; max-width: 420px; }
+        .contact-right .hero-socials { margin-top: 0.5rem; }
     </style>
 </head>
 
@@ -612,7 +617,7 @@
     <!-- ── Nav ── -->
     <header class="header_menu">
         <div class="logo"></div>
-        <nav id="menu_list" class="nav_bar" style="visibility:hidden;">
+        <nav id="menu_list" class="nav_bar">
             <a class="btnClose" id="close">Close</a>
             <ul>
                 <li class="nav_bar_item"><a href="#hero">Home</a></li>
@@ -851,7 +856,7 @@
                             <div class="skill-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" style="filter:invert(0.7)">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" class="img-invert-70">
                             <span>REST API Design</span>
                             <div class="skill-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
                         </div>
@@ -893,7 +898,7 @@
                     <div class="skill-group-title">Frontend</div>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" style="filter:invert(0.8)">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" class="img-invert-80">
                             <span>Next.js</span>
                             <div class="skill-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle empty"></i></div>
                         </div>
@@ -919,7 +924,7 @@
                             <div class="skill-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle empty"></i></div>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" style="filter:invert(0.8)">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" class="img-invert-80">
                             <span>GitHub Actions</span>
                             <div class="skill-dots"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle empty"></i></div>
                         </div>
@@ -975,14 +980,14 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;max-width:420px;">
+                    <p class="contact-text">
                         Open to senior backend, lead, or full-stack positions. Fluent in Italian, French, and English.
                         Based in Brussels — available for hybrid or remote roles.
                     </p>
                     <a class="btn-primary" href="./assets/Ivan_DAndrea_CV.pdf" download>
                         <i class="fas fa-download"></i> Download CV (PDF)
                     </a>
-                    <div class="hero-socials" style="margin-top:0.5rem;">
+                    <div class="hero-socials">
                         <a class="social-link" href="https://github.com/IvanDandrea86" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
