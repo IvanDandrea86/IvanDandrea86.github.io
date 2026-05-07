@@ -3,13 +3,99 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ivan D'Andrea Junior Web Developer</title>
+    <title>Ivan D'Andrea — Lead Backend Engineer</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal developer page">
+    <meta name="description" content="Ivan D'Andrea — Lead Backend Engineer. Node.js, TypeScript, Microservices, REST APIs, Docker, Prometheus/Grafana. Based in Brussels.">
+    <style>
+        #experience {
+            padding: 3rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .exp-card {
+            background: #fff;
+            border-left: 4px solid #30475E;
+            border-radius: 0.4rem;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .exp-role {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #222831;
+        }
+        .exp-company {
+            font-size: 0.95rem;
+            color: #30475E;
+            margin-bottom: 0.8rem;
+        }
+        .exp-date {
+            font-size: 0.85rem;
+            color: #888;
+            float: right;
+        }
+        .exp-card ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+        .exp-card ul li {
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+        .profile-box {
+            background: #fff;
+            border-radius: 0.5rem;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 1rem 0.5rem;
+            max-width: 700px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #30475E;
+            text-align: center;
+        }
+        .tag {
+            display: inline-block;
+            background: #30475E;
+            color: #DDDDDD;
+            border-radius: 0.3rem;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.78rem;
+            margin: 0.15rem;
+        }
+        .card-tags {
+            margin-top: 0.4rem;
+            text-align: center;
+        }
+        .logo_container a {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+        #works .section_title,
+        #skill .section_title,
+        #experience .section_title {
+            margin-bottom: 0.5rem;
+        }
+        #experience {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #experience > * {
+            width: 100%;
+            max-width: 860px;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,152 +107,184 @@
             <a class="btnClose" id="close">Close</a>
             <ul>
                 <li class="nav_bar_item">
-                    <a href="#wellcome" id="bio" aria-label="Welcome Page">About</a>
+                    <a href="#wellcome" aria-label="About">About</a>
                 </li>
                 <li class="nav_bar_item">
-                    <a href="#works" id="project" aria-label="List of my works and projects">Projects</a>
+                    <a href="#experience" aria-label="Experience">Experience</a>
                 </li>
                 <li class="nav_bar_item">
-                    <a href="#skill" id="skills" aria-label="List of my talents and skills">Skills</a>
+                    <a href="#works" aria-label="Projects">Projects</a>
                 </li>
-
+                <li class="nav_bar_item">
+                    <a href="#skill" aria-label="Skills">Skills</a>
+                </li>
             </ul>
         </nav>
         <a class="btnMenu" id="menu">Menu</a>
     </header>
-    <!--Welcome Cover Section-->
+
+    <!--Welcome / Hero Section-->
     <section id="wellcome">
         <div class="cover_text">
-            <h1>Welcome</h1>
-            <h1>I'am Ivan D'Andrea</h1>
-            <p>Junior Web Developer </p>
+            <h1>Ivan D'Andrea</h1>
+            <p>Lead Backend Engineer</p>
+        </div>
+        <div class="profile-box">
+            Lead Backend Engineer with 4+ years designing and shipping RESTful APIs and distributed microservice systems in Node.js &amp; TypeScript. Equally comfortable on the frontend — migrated production systems from Bootstrap to Next.js, Tailwind CSS, and shadcn/ui. Built observability into every service layer via Prometheus &amp; Grafana. Based in Brussels.
+        </div>
+        <div class="logo_container" style="margin-top:1.5rem;">
+            <a href='https://github.com/IvanDandrea86' aria-label="GitHub" target='_blank'>
+                <img height="45" width="55" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            </a>
+            <a href='https://www.linkedin.com/in/ivan-d-andrea-956ba7214/' aria-label="LinkedIn" target='_blank'>
+                <img height="45" width="55" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+            </a>
         </div>
         <figure>
             <blockquote>
-                <q> Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity.</q>
+                <q>Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity.</q>
             </blockquote>
-            <figcaption>-Aaron Swartz </figcaption>
+            <figcaption>— Aaron Swartz</figcaption>
         </figure>
-        <div class="logo_container">
-            <a href='https://github.com/IvanDandrea86' aria-label="Github" target='_blank'><img  height="45" width="55" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
-            </a>
-            <a href='https://www.linkedin.com/in/ivan-d-andrea-956ba7214/' aria-label="Linkedin" target='_blank'><img  height="45" width="55"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-            </a>
+    </section>
+
+    <!--Experience Section-->
+    <section id="experience" style="background:transparent;padding:3rem 1rem;">
+        <h2 class="section_title">Experience</h2>
+
+        <div class="exp-card">
+            <span class="exp-date">Oct 2021 – Present</span>
+            <div class="exp-role">Lead Backend Developer / Full Stack Engineer</div>
+            <div class="exp-company">Relieve Group – Relieve Furniture &nbsp;·&nbsp; E-commerce, ~50 employees, Brussels</div>
+            <ul>
+                <li>Architected RESTful APIs in Node.js &amp; TypeScript — API versioning, JWT/OAuth2 auth, rate limiting, full OpenAPI/Swagger documentation.</li>
+                <li>Designed microservice architecture: decomposed monolith into 10+ independently deployable services with async event handling, circuit breakers, and graceful degradation.</li>
+                <li>Owned full deployment lifecycle: Dockerised each microservice, configured Compose environments (dev/staging/prod), automated via GitHub Actions pipelines with smoke-test gates.</li>
+                <li>Built modern frontend interfaces in Next.js, Tailwind CSS, and shadcn/ui; led migration from legacy Bootstrap codebase, improving Core Web Vitals significantly.</li>
+                <li>Instrumented all microservices with Prometheus metrics and Grafana dashboards per service (latency p50/p95/p99, error rate, throughput) — enabling proactive alerting and faster RCA.</li>
+                <li>Managed Linux/UNIX production servers: provisioning, security patching, log analysis, on-call incident response, post-mortem documentation.</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <span class="exp-date">Sep 2019 – Oct 2021</span>
+            <div class="exp-role">Full Stack Developer</div>
+            <div class="exp-company">BeCode &nbsp;·&nbsp; Professional development programme, Brussels</div>
+            <ul>
+                <li>Delivered backend APIs and full-stack applications across multiple team projects using Node.js, JavaScript, React, and MySQL under agile workflows.</li>
+                <li>Mentored junior developers in backend architecture and RESTful design principles.</li>
+            </ul>
         </div>
     </section>
-    <!--Works Section-->
-    <section id="works">
 
-        <h2 class="section_title">Works</h2>
+    <!--Projects Section-->
+    <section id="works">
+        <h2 class="section_title">Projects</h2>
         <div class="cards-container">
+
+            <article class="card">
+                <div class="card-body" style="justify-content:flex-start;padding-top:1.2rem;">
+                    <h3 class="card-title">Microservice Platform</h3>
+                    <p class="card-text" style="text-align:center;">Decomposed monolithic e-commerce backend into 10+ microservices (catalogue, orders, inventory, notifications, auth). OpenAPI inter-service contracts, async messaging, independent CI pipelines.</p>
+                    <div class="card-tags">
+                        <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-body" style="justify-content:flex-start;padding-top:1.2rem;">
+                    <h3 class="card-title">API Gateway &amp; Auth Layer</h3>
+                    <p class="card-text" style="text-align:center;">Centralised API gateway handling routing, JWT validation, OAuth2 flows, rate limiting, and request logging. Eliminated duplicated auth logic across 10+ services.</p>
+                    <div class="card-tags">
+                        <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">JWT</span><span class="tag">OAuth2</span><span class="tag">OpenAPI</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-body" style="justify-content:flex-start;padding-top:1.2rem;">
+                    <h3 class="card-title">Frontend Modernisation</h3>
+                    <p class="card-text" style="text-align:center;">Incremental migration of legacy Bootstrap frontend to Next.js / Tailwind CSS / shadcn/ui. Improved Lighthouse scores, reduced bundle size, introduced component-level testing.</p>
+                    <div class="card-tags">
+                        <span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">shadcn/ui</span><span class="tag">React</span><span class="tag">TypeScript</span>
+                    </div>
+                </div>
+            </article>
+
             <article class="card">
                 <figure class="card-figure">
-                    <img src="./media/artisanAPI.png" alt="image box">
+                    <img src="./media/artisanAPI.png" alt="ArtisanBE API">
                 </figure>
                 <div class="card-body">
-                    <h3 class="card-title">ArtisanBE-API v1.0</h3>
-                    <p class="card-text">GraphQL Api connected to the Belgian Artisan Database</p>
-                    <a class="card-link" target="_blank" href="https://artisan-be-api-staging.herokuapp.com/graphql">Visit</a>
+                    <h3 class="card-title">ArtisanBE-API</h3>
+                    <p class="card-text">GraphQL API connected to the Belgian Artisan Database.</p>
+                    <div class="card-tags"><span class="tag">GraphQL</span><span class="tag">Node.js</span></div>
+                </div>
             </article>
+
             <article class="card">
                 <figure class="card-figure">
-                    <img src="./media/wegout.png" alt="image box">
+                    <img src="./media/wegout.png" alt="WeGout app">
                 </figure>
                 <div class="card-body">
                     <h3 class="card-title">WeGout</h3>
-                    <p class="card-text">Social Web App,geolcaization-based event search, livechat. NodeJs/React/GraphQL </p>
-                    <a class=" card-link" href="http://wegout-staging.herokuapp.com/"> Visit</a>
+                    <p class="card-text">Social web app — geolocation-based event search, live chat.</p>
+                    <div class="card-tags"><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">GraphQL</span></div>
+                </div>
             </article>
-            <article class="card">
-                <figure class="card-figure">
-                    <img src="https://source.unsplash.com/random/300×300" alt="image box">
-                </figure>
-                <div class="card-body">
-                    <h3 class="card-title">Getflix</h3>
-                    <p class="card-text">Netflix clone, developed in PHP,using a Docker. </p>
-                    <a class="card-link" target="_blank" href="https://getflixproject.herokuapp.com/"> Visit</a>
-            </article>
-            <article class="card">
-                <figure class="card-figure">
-                    <img src="https://source.unsplash.com/random/300×300" alt="image box">
-                </figure>
-                <div class="card-body">
-                    <h3 class="card-title">Restorant-Bootsrap</h3>
-                    <p class="card-text">Web site of a restaurant created using Bootsrap 5.</p>
-                    <a class="card-link" target="_blank" href="https://ivandandrea86.github.io/restaurant-css-framework/"> Visit</a>
-            </article>
-            <article class="card">
-                <figure class="card-figure">
-                    <img src="https://source.unsplash.com/random/300×300" alt="">
-                </figure>
-                <div class="card-body">
-                    <h3 class="card-title">Hangman</h3>
-                    <p class="card-text">A simple Web site of Hangman-the game</p>
-                    <a class="card-link" target="_blank" href="https://ivandandrea86.github.io/hangman/"> Visit</a>
 
-            </article>
-            <article class="card">
-                <figure class="card-figure">
-                    <img src="https://source.unsplash.com/random/300×300" alt="">
-                </figure>
-                <div class="card-body">
-                    <h3 class="card-title">CookieClicker</h3>
-                    <p class="card-text">Our verison of the famous CookieCliker Idle</p>
-                    <a class="card-link,button" href="https://ivandandrea86.github.io/cookieClicker/"> Visit</a>
-
-            </article>
-            </div>
-
+        </div>
     </section>
-    <!--Skills section-->
+
+    <!--Skills Section-->
     <section id="skill">
         <h2 class="section_title">Skills</h2>
         <div class="skillContainer">
 
-
             <div class="skillSection">
-                <img class="skillIcon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                <img class="skillIcon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+                <!-- Backend -->
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title="Node.js" alt="Node.js" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" title="Express" alt="Express" />
             </div>
 
             <div class="skillSection">
-               
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg" />
+                <!-- Frontend -->
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" title="Next.js" alt="Next.js" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React" alt="React" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" title="Tailwind CSS" alt="Tailwind CSS" />
+                <img class="skillIcon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" />
+                <img class="skillIcon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" />
             </div>
-            <div class="skillSection">
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" />
-            </div>
-            <div class="skillSection">
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
-                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original-wordmark.svg" />
-                </div>
-                <div class="skillSection">
-                    <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                    <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-                    <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" />
-                </div>
 
-
+            <div class="skillSection">
+                <!-- Databases -->
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title="PostgreSQL" alt="PostgreSQL" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" title="MongoDB" alt="MongoDB" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original-wordmark.svg" title="Redis" alt="Redis" />
             </div>
+
+            <div class="skillSection">
+                <!-- DevOps & Observability -->
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker" alt="Docker" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub Actions" alt="GitHub Actions" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" title="Prometheus" alt="Prometheus" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" title="Grafana" alt="Grafana" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" title="Linux" alt="Linux" />
+                <img class="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" />
+            </div>
+
+        </div>
     </section>
 
-
     <footer class="container">
-        <p> Ivan D'Andrea 2021</p>
+        <p>Ivan D'Andrea &copy; 2026 &nbsp;·&nbsp; Brussels</p>
     </footer>
-    <script src="./js/menu.js "></script>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/canvas.js"></script>
 </body>
 
